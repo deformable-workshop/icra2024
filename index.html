@@ -157,8 +157,11 @@ var x = setInterval(function() {
 							<h3>Topics</h3>
 
 							<p>
-								The workshop aims to explore different aspects that will potentially allow robots to autonomously manipulate deformable objects in the near future. Enabling such manipulation is crucial for a variety of domains and tasks, e.g., domestic, industrial and surgical contexts, which involve various forms of object deformability. However, the complexity of representing and modeling the dynamics of these objects results in the lack of a current unified solution that can be adapted to a wide range of objects.
-Specifically, the workshop will focus on, but is not limited to, the following topics for deformable object manipulation:
+								The workshop aims to explore different aspects that will allow robots to autonomously manipulate deformable objects with greater ability and generalization. Enabling such manipulation is crucial for a variety of domains and tasks, such as domestic, industrial, and surgical contexts, which involve various forms of deformable objects. However, the complexity of representing and modeling the dynamics of these objects results in the lack of a current unified solution that can be adapted to a wide range of objects.
+In the past few years, there has also been an increasing interest in applying foundation models to robotic manipulation, including the use of large pre-trained vision models, language models (LLMs), and vision language models (VLMs) for more sample-efficient learning and solving language-conditioned tasks. Additionally, recent advances in imitation learning, reinforcement learning, and 3D representation models have showcased the capability of robots learning to perform more complex, dexterous, and long-horizon tasks. The release of new simulators, datasets, and low-cost robotic hardware is lowering the barrier for reproducible research, benchmarking, and reuse of data. In this workshop, we will encourage discussions on how these recent advances can improve deformable object manipulation.
+
+
+The workshop will focus on, but is not limited to, the following topics for deformable object manipulation:
 
 
 <ul>
@@ -169,8 +172,9 @@ Specifically, the workshop will focus on, but is not limited to, the following t
   <li>Perception: state tracking, parameter identification, property detection (e.g. landmarks for
 garments) and classification, etc. </li>
   <li>Control, visual servoing and planning</li>
+  <li> Use of foundation models, such as large vision and language models, and associated large datasets</li>
   <li>Specialized tools, e.g. grippers, and sensors</li>
-	<li>Multi-arm manipulation</li>
+	<!--li>Multi-arm manipulation<--/li>
   <li>Application-specific challenges: cloth folding, surgical tasks, precision agriculture, etc.</li>
 </ul>
 
@@ -553,248 +557,8 @@ garments) and classification, etc. </li>
 					<!-- Schedule -->
 					<section id="talks" class="wrapper style2 spotlights">
 						<div class="inner">
-							<h2>Invited Speakers (alphabetical order) </h2>
-							<!--ul>
-							<li>Yiannis Demiris, Professor, Imperial College London, UK</li>
-							<li>Elena De Momi, Professor, Politecnico di Milano, Italy</li>
-							<li>Nima Fazeli, Assistant Professor, University of Michigan, USA</li>
-							<li>Yunzhu Li, (Incoming) Assistant Professor, University of Illinois Urbana-Champaign, USA</li>
-							<li>Yashraj Narang (tentative), Senior Research Scientist, NVIDIA, USA</li>
-							<li>Jia Pan, Assistant Professor, University of Hong Kong, China</li>
-							<li>Carme Torras, Professor, Institut de Robòtica i Informàtica Industrial, Spain</li>
-							<li>Jihong Zhu, Assistant Professor, University of York, UK</li>
-
-							</ul-->
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Yiannis_Demiris.jpg" alt=" Yiannis Demiris" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Yiannis Demiris </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									 Professor
-									<br>
-									 Imperial College London, UK
-									<br>
-									<a href="https://www.imperial.ac.uk/people/y.demiris" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Robot-assisted Dressing: bimanual policies for deformable object manipulation <br>
-									</p>
-							  </div>
-							</div>
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Elena_De_Momi.jpeg" alt="Elena De Momi" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Elena De Momi </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									Professor
-									<br>
-									Politecnico di Milano, Italy
-									<br>
-									<a href="https://www.deib.polimi.it/eng/people/details/172386" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> AI-based techniques for improving tool-tissue interaction in robotic surgery <br>
-									</p>
-							  </div>
-							</div>
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Nima_Fazeli.png" alt="Nima Fazeli" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Nima Fazeli</b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									Assistant Professor
-									<br>
-									University of Michigan, USA
-									<br>
-									<a href="https://www.mmintlab.com/people/nima-fazeli/" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Recent advances in Multimodal Implicit Representations of Deformable Objects <br>
-									</p>
-							  </div>
-							</div>
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Yunzhu_Li.jpeg" alt="Yunzhu Li" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Yunzhu Li </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									Postdoctoral Researcher
-									<br>
-									Stanford, USA
-									<br>
-									(Incoming) Assistant Professor, University of Illinois Urbana-Champaign, USA
-									<br>
-									<a href="https://yunzhuli.github.io/" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Structured Model Learning for Deformable Object Manipulation <br>
-									</p>
-							  </div>
-							</div>
-
-								<hr style="width:80%;text-align:left;margin-left:5">
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Yashraj_Narang.jpeg" alt="Yashraj Narang" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Yashraj Narang </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									 Senior Research Scientist
-									<br>
-									NVIDIA, USA
-									<br>
-									<a href="https://research.nvidia.com/person/yashraj-narang" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Using and building simulation models for deformable-object manipulation<br>
-									</p>
-							  </div>
-							</div>
-
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Jia_Pan.jpg" alt="Jia Pan" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Jia Pan </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									Assistant Professor
-									<br>
-									University of Hong Kong, China
-									<br>
-									<a href="https://sites.google.com/site/panjia/" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Nonprehensile manipulation of cloth pieces <br>
-									</p>
-							  </div>
-							</div>
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-								<div class="row">
-							  <div class="column">
-							    <img src="imgs/emo.jpg" alt="Emo Todorov" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Emo Todorov </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-                                    Affiliate Professor, University of Washington
-									<br>
-                                    Founder, Roboti LLC
-									<br>
-									<a href="https://homes.cs.washington.edu/~todorov/index.php" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> New soft-body modeling capabilities in MuJoCo <br>
-									</p>
-							  </div>
-							</div>
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Carme_Torras.jpg" alt="Carme Torras" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Carme Torras </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									Professor
-									<br>
-									 Institut de Robòtica i Informàtica Industrial, Spain
-									<br>
-									<a href="https://www.iri.upc.edu/people/torras/" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Cloth representation and manipulation within the CLOTHILDE project <br>
-									</p>
-							  </div>
-							</div>
-
-							<hr style="width:80%;text-align:left;margin-left:5">
-
-
-							<div class="row">
-							  <div class="column">
-							    <img src="imgs/Jihong_Zhu.jpg" alt="Jihong Zhu" class="img-list">
-							  </div>
-							  <div class="column">
-									<p></p>
-				    				<h3 class='name-list'><b>  Jihong Zhu </b></h3>
-
-				    				<div class='info-list'>
-									<br>
-									Assistant Professor
-									<br>
-									University of York, UK
-									<br>
-									<a href="https://jihong-zhu.github.io/" target="_blank">Personal website</a>
-									<br>
-									</div>
-									<p class='talk-list'>
-									<b> Talk title:</b> Deformable Object Manipulation: Fundamental challenges and promising applications <br>
-									</p>
-							  </div>
-							</div>
+							<h2>Invited Speakers (TBD) </h2>
+							
 
 							<hr style="width:80%;text-align:left;margin-left:5">
 
@@ -808,17 +572,17 @@ garments) and classification, etc. </li>
 						<div class="inner">
 							<h2>Organizers </h2>
 							<ul>
-
-							  <li>Daniel Seita, Carnegie Mellon University, USA</li>
-							<li> Martina Lippi, Roma Tre University, Italy</li>
 							  <li>Michael C. Welle, KTH Royal Institute of Technology, Sweden</li>
+							  <li>Daniel Seita, Carnegie Mellon University, USA</li>
+							  <li> Martina Lippi, Roma Tre University, Italy</li>
 							  <li>Fangyi Zhang, Queensland University of Technology (QUT), Australia</li>
+  							  <li>Lawrence Yunliang Chen, University of California, Berkeley, USA</li>
 
 							</ul>
 
 							<h2>Co-Organizers</h2>
 							<ul>
-							  <li>Hang Yin, University of Copenhagen, Denmark</li>
+							  <li>Alberta Longhini, KTH Royal Institute of Technology, Sweden</li>
 							  <li>Danica Kragic, KTH Royal Institute of Technology, Sweden</li>
 							  <li> Alessandro Marino, University of Cassino and Southern Lazio, Italy</li>
 							  <li>David Held, Carnegie Mellon University, USA</li>
@@ -852,7 +616,7 @@ garments) and classification, etc. </li>
 					<section id="contact" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Contact</h2>
-							 <p> If you have any questions please contact Daniel Seita at the email: <b>dseita AT andrew DOT cmu DOT edu </b>  </p>
+							 <p> If you have any questions please contact Michael Welle at the email: <b>mwelle AT kth DOT se </b>  </p>
 
 
 
@@ -866,20 +630,7 @@ garments) and classification, etc. </li>
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul>
-					<li>
-					The workshop has been endorsed by IEEE RAS Technical Committee on Computer and Robot Vision, IEEE RAS Technical Committee on Robotic Hands, Grasping, and Manipulation, and IEEE RAS Technical Committee on Robot Learning
-
-					</li>
-					<li>
-					Participants are required to abide by the <a href="https://www.ieee-ras.org/about-ras/diversity-page/ieee-ras-code-of-conduct" target="_blank">IEEE RAS Code of Conduct</a>
-					</li>
-
-					</ul>
-				</div>
-			</footer>
+		<!-- TBD -->
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
